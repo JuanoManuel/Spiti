@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> <!--letra del encabezado-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Iconos de google-->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -13,38 +14,57 @@
 	<title>Prueba de sliter</title>
 </head>
 <body>
-	<div id="headerimage" class="container-fluid">
-		<div class="row justify-content-center">
+	<section id="headerimage" class="container-fluid">
 			<div id="" class="imagebox">
 				<img src="img/Hogar.jpg" class="img-fluid imgp" alt="Responsive image">	
 				<div class="image-overlay">
 					<div class="row align-items-center justify-content-between">
-						<div class="col-3">
+						<div class="col-4 col-sm-3">
 							<!--<img src="img/Hogar.jpg" class="img-fluid" alt="Responsive image">-->
-							<img class="img-fluid" src="img/spitilogo.png">
+							<img class="img-fluid" src="img/logo_azul.png">
 						</div>
-						<div class="col-3">
-							<div class="row whatsapp m-0">
-								<div class="col-3">
-									<img src="img/whatsapplogo.png" class="img-fluid">
-								</div>
-								<div class="col-9">Contáctanos</div>
-							</div>
+						<div class="col-8 col-sm-5">
+							<button id="whatsapp" class="d-none d-sm-block btn-success btn btn-sm">
+								<img src="img/whatsapplogo.png" style="width: 10%" class="img-fluid">
+								Contáctanos
+							</button>
+							<button id="whatsapp" class="d-block d-sm-none btn-success btn btn-sm mobile">
+								<img src="img/whatsapplogo.png" style="width: 10%" class="img-fluid">
+								Contáctanos
+							</button>
 						</div>
 					</div>
 					<div class="row justify-content-end">
 						<div class="col-auto">
-							<h1 class=" header-text">Tu vida en movimiento, tu Hogar también</h1>
+							<h1 class="d-none d-sm-block header-text">Tu vida en movimiento, tu Hogar también</h1>
+							<h1 class="d-block d-sm-none mobile header-text">Tu vida en movimiento, tu Hogar también</h1>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<section id="Conocenos">
-		<div id="Conocenos-bg"></div>
 	</section>
-	<!--<div class="container-fluid">
+	<section id="Conocenos" class="container-fluid p-5">
+		<div id="Conocenos-bg"></div>
+		<div id="conocenos-img-0"></div>
+		<div class="row justify-content-around">
+			<div class="col-2"></div>
+			<div class="col-4">
+				<h2>Conocenos</h2>
+			</div>
+			<div class="col-4"></div>
+		</div>
+		<div class="row justify-content-around">
+			<div class="col-2"></div>
+			<div class="col-7">
+				<h3 class="subtitle">Arreglamos tu hogar</h3>
+				<div class="line-container">
+					<div class="line-blue line"></div>
+				</div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+	</section>
+	<!--div class="container-fluid">
 		<div class="color row justify-content-center">
 			<div class="your-class col-12">
 				    <div><img class="slick-current " src="img/h1.jpg"></div>

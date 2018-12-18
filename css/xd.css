@@ -1,6 +1,15 @@
+body {
+  background-color: #FFFFFF;
+}
+
 #headerimage {
   position: relative;
+  width: 100%;
+  height: 56.2vw;
+  overflow: hidden;
+  display: flex;
 }
+
 
 .color{
 	background-color: rgb(213, 233, 242);
@@ -25,9 +34,13 @@
 }
 
 .imagebox {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
   width: 100%;
-  max-height: 720px;
+  max-height: 1080px;
   overflow: hidden;
 }
 
@@ -47,8 +60,8 @@
 	height: 100%;
 }
 
-div.image-overlay > div.row {
-  margin-bottom: 15em;
+div.image-overlay > div.row:first-child {
+  margin-bottom: 30%;
 }
 
 div.image-overlay .row h1 {
@@ -63,14 +76,81 @@ div.image-overlay .row h1 {
   padding: 5px;
 }
 
+section#Conocenos {
+  position: relative;
+  height: 60vw;
+}
+
+section#Conocenos div#conocenos-img-0 {
+  background-image: url(../img/plomero.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  top: 25%;
+  left: 53%;
+  width: 45%;
+  height: 45%;
+}
+
 section#Conocenos div#Conocenos-bg {
   background-image: url(../img/fondo_edificios.png);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+div.image-overlay h1.mobile {
+  font-size: 15px;
+}
+
+div.image-overlay button {
+  border-radius: 10px;
+  font-size: 45px;
+}
+
+div.image-overlay button.mobile {
+  font-size: 15px;
+}
+
+section#Conocenos h2{
+  color: #2B7FE4;
+  font-size: 60px;
+}
+
+section#Conocenos h3{
+  font-weight: bold;
+  font-size: 70px;
+}
+
+section#Conocenos > div:nth-child(3) {
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+
+.line-blue {
+  background-color: #2B7FE4;
+}
+
+.line {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 57vw;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.line-container {
+  position: relative;
+  margin: 1.98vw 0 0;
+  width: 300px;
+  height: 3px;
+  overflow: hidden;
 }
