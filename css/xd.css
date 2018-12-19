@@ -1,3 +1,7 @@
+* {
+  font-family: Segoe UI;
+}
+
 body {
   background-color: #FFFFFF;
 }
@@ -5,7 +9,7 @@ body {
 #headerimage {
   position: relative;
   width: 100%;
-  height: 56.2vw;
+  height: 50vw;
   overflow: hidden;
   display: flex;
 }
@@ -41,7 +45,6 @@ body {
   opacity: 1;
   width: 100%;
   max-height: 1080px;
-  overflow: hidden;
 }
 
 .image-overlay {
@@ -61,7 +64,7 @@ body {
 }
 
 div.image-overlay > div.row:first-child {
-  margin-bottom: 30%;
+  margin-bottom: 20%;
 }
 
 div.image-overlay .row h1 {
@@ -81,6 +84,25 @@ section#Conocenos {
   height: 60vw;
 }
 
+section#Conocenos div#conocenos-img-1 {
+  background-image: url(../img/equipo_trabajo.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  top: 75%;
+  left: 35%;
+  width: 25%;
+  height: 25%;
+}
+
+div#bg-mobile {
+  background-image: url(../img/fondo_edificios.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
 section#Conocenos div#conocenos-img-0 {
   background-image: url(../img/plomero.jpg);
   background-size: cover;
@@ -94,6 +116,19 @@ section#Conocenos div#conocenos-img-0 {
   height: 45%;
 }
 
+section#Conocenos-mobile div#conocenos-img-0-mobile {
+  background-image: url(../img/plomero.jpg);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  top: 29%;
+  right: 5%;
+  width: 60%;
+  height: 20%;
+}
+
 section#Conocenos div#Conocenos-bg {
   background-image: url(../img/fondo_edificios.png);
   background-size: cover;
@@ -104,6 +139,18 @@ section#Conocenos div#Conocenos-bg {
   top: 0;
   left: 50%;
   width: 50%;
+  height: 100%;
+}
+
+section#Conocenos-mobile div#Conocenos-bg-mobile {
+  background-image: url(../img/fondo_edificios.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
   height: 100%;
 }
 
@@ -120,19 +167,66 @@ div.image-overlay button.mobile {
   font-size: 15px;
 }
 
-section#Conocenos h2{
-  color: #2B7FE4;
+section#Conocenos h2, section#servicios h2, footer h2{
   font-size: 60px;
 }
 
-section#Conocenos h3{
+section#servicios h2, footer#footer-desktop h2{
+  color: #FFFFFF;
+}
+
+footer#footer-desktop {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+footer#footer-desktop .row {
+  padding-bottom: 20px;
+}
+
+footer#footer-desktop img {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+section#Conocenos h2 {
+  color: #2B7FE4;
+}
+
+section#servicios h2.servicios-mobile {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+section#Conocenos-mobile h2, section#servicios-mobile h2 {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+section#Conocenos h3.textxl{
   font-weight: bold;
   font-size: 70px;
 }
 
+section#Conocenos h3.textmd{
+  font-weight: bold;
+  font-size: 40px;
+}
+
 section#Conocenos > div:nth-child(3) {
-  padding-bottom: 80px;
-  padding-top: 50px;
+  padding-top: 5%;
+}
+
+section#Conocenos > div.row {
+  padding-bottom: 0px;
+}
+
+h3.subtitle {
+  color: #2B7FE4;
+}
+
+h3.subtitle-white {
+  color: #FFFFFF;
 }
 
 .line-blue {
@@ -153,4 +247,52 @@ section#Conocenos > div:nth-child(3) {
   width: 300px;
   height: 3px;
   overflow: hidden;
+}
+
+.line-container-mobile {
+  position: relative;
+  margin: 1.98vw 0 0;
+  width: 100px;
+  height: 3px;
+  overflow: hidden;
+}
+
+.textxl {
+  font-size: 40px;
+}
+
+.sourcexl {
+  font-size: 30px;
+}
+
+.textlg {
+  font-size: 30px;
+}
+
+.sourcelg {
+  font-size: 20px;
+}
+
+.textmd {
+  font-size: 20px;
+}
+
+.sourcemd {
+  font-size: 15px;
+}
+
+.textsm {
+  font-size: 15px;
+}
+
+.sourcesm {
+  font-size: 10px;
+}
+
+.slider {
+  width: auto !important;
+}
+
+.slider li {
+  width: auto !important;
 }
